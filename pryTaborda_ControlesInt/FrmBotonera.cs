@@ -9,10 +9,8 @@ namespace pryTaborda_ControlesInt
 
         private void btnBotonera_Click(object sender, EventArgs e)
         {
-            //Crear instancia del siguiente formulario
+            
             FrmBotonera siguienteForm = new FrmBotonera();
-
-            //Mostrar el siguiente formulario
             siguienteForm.Show();
 
 

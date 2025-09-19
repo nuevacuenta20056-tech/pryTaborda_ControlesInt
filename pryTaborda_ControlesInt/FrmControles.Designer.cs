@@ -28,28 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
+            btnAtras = new Button();
+            btnSiguiente = new Button();
             lblNombre = new Label();
             SuspendLayout();
             // 
-            // button1
+            // btnAtras
             // 
-            button1.Location = new Point(168, 177);
-            button1.Name = "button1";
-            button1.Size = new Size(101, 47);
-            button1.TabIndex = 0;
-            button1.Text = "Atras";
-            button1.UseVisualStyleBackColor = true;
+            btnAtras.Location = new Point(168, 177);
+            btnAtras.Name = "btnAtras";
+            btnAtras.Size = new Size(101, 47);
+            btnAtras.TabIndex = 0;
+            btnAtras.Text = "Atras";
+            btnAtras.UseVisualStyleBackColor = true;
+            btnAtras.Click += btnAtras_Click;
             // 
-            // button2
+            // btnSiguiente
             // 
-            button2.Location = new Point(354, 177);
-            button2.Name = "button2";
-            button2.Size = new Size(101, 47);
-            button2.TabIndex = 1;
-            button2.Text = "Siguiente";
-            button2.UseVisualStyleBackColor = true;
+            btnSiguiente.Location = new Point(354, 177);
+            btnSiguiente.Name = "btnSiguiente";
+            btnSiguiente.Size = new Size(101, 47);
+            btnSiguiente.TabIndex = 1;
+            btnSiguiente.Text = "Siguiente";
+            btnSiguiente.UseVisualStyleBackColor = true;
+            btnSiguiente.Click += btnSiguiente_Click;
             // 
             // lblNombre
             // 
@@ -68,8 +70,8 @@
             BackColor = Color.FromArgb(255, 128, 0);
             ClientSize = new Size(653, 355);
             Controls.Add(lblNombre);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnSiguiente);
+            Controls.Add(btnAtras);
             Name = "FrmBotonera";
             Text = "Form2";
             ResumeLayout(false);
@@ -78,8 +80,8 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
+        private Button btnAtras;
+        private Button btnSiguiente;
         private Label lblNombre;
     }
 }
